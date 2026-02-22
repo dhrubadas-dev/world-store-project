@@ -1,5 +1,23 @@
+import Link from "next/link";
+
 const HeroHome = () => {
-  return <></>;
+  return (
+    <section className="grid place-items-center bg-[url(/home-banner.jpg)] bg-cover bg-center py-64">
+      <div className="grid place-items-center gap-6">
+        <h1 className="text-earth-dark text-8xl font-semibold tracking-widest">
+          EARTH
+        </h1>
+
+        <p className="text-4xl tracking-widest uppercase">Multipurpose Store</p>
+
+        <Link
+          href={"/products"}
+          className="bg-earth-light mt-4 rounded-sm px-8 py-2 text-xl text-white uppercase">
+          Shop Now
+        </Link>
+      </div>
+    </section>
+  );
 };
 
 export default HeroHome;

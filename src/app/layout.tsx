@@ -1,6 +1,5 @@
-import Header from "@/components/Header/Header";
-import ThemeProvider from "@/components/Providers/ThemeProvider";
-import { geistMono, geistSans } from "@/lib/fonts";
+import SiteFooter from "@/components/Header/SiteFooter";
+import SiteHeader from "@/components/Header/SiteHeader";
 import { ReactNode } from "react";
 import "./globals.css";
 
@@ -12,17 +11,13 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       suppressHydrationWarning>
       <body>
-        <ThemeProvider
-          attribute={"class"}
-          defaultTheme="dark"
-          enableSystem={false}>
-          <Header />
+        <SiteHeader />
 
-          <main>{children}</main>
-        </ThemeProvider>
+        <main>{children}</main>
+
+        <SiteFooter />
       </body>
     </html>
   );
