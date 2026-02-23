@@ -47,6 +47,22 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
+.text-earth-dark {
+  color: #2c541d;
+}
+
+bg-earth-dark {
+  background-color: #2c541d;
+}
+
+.bg-earth-light {
+  background-color: #74a84a;
+}
+
+.bg-earth-light:hover {
+  background-color: #2c541d;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

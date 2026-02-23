@@ -1,18 +1,38 @@
+import GiftPostcard from "@/components/GiftPostcard";
+import FeaturesSection from "@/components/HomeComponent/FeaturesSection";
+import HeroHome from "@/components/HomeComponent/HeroHome";
+import ProductsSection from "@/components/HomeComponent/ProductsSection";
+import TestimonialsSection from "@/components/HomeComponent/TestimonialsSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nextjs Starter Frontend",
-  description: "Production grade Next.js starter template",
+  title: "Home | World Store",
+  description: "Home page of World Store",
 };
 
 const page = () => {
   return (
-    <section className="grid h-[90dvh] place-items-center">
-      <div className="space-y-2 text-center">
-        <h1 className="text-5xl font-semibold">Nextjs Starter Frontend</h1>
-        <h2 className="text-3xl">Production grade Next.js starter template</h2>
-      </div>
-    </section>
+    <>
+      {/* Hero Section Start */}
+      <HeroHome />
+      {/* Hero Section End */}
+
+      {/* Products Section Start */}
+      <ProductsSection />
+      {/* Products Section End */}
+
+      {/* Testimonials Section Start */}
+      <TestimonialsSection />
+      {/* Testimonials Section End */}
+
+      {/* Call to Action Section Start */}
+      <GiftPostcard />
+      {/* Call to Action Section End */}
+
+      {/* Features Section Start */}
+      <FeaturesSection />
+      {/* Features Section End */}
+    </>
   );
 };
 
